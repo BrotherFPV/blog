@@ -49,16 +49,3 @@ collections:
         widget: list
         required: false
       - { label: 内容, name: body, widget: text }
-
-  - name: pages
-    label: 页面
-    label_singular: 页面
-    folder: src/content
-    create: false
-    extension: md
-    format: frontmatter
-    editor:
-      preview: false
-    filter: { field: title, value: "*x" }
-    deleted: true
-    hidden: true
