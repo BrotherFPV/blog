@@ -2,6 +2,7 @@ backend:
   name: github
   repo: BrotherFPV/blog
   branch: main
+  base_url: https://auth.brotherfpv.fly
 
 locale: zh_CN
 site_url: https://blog.brotherfpv.fly
