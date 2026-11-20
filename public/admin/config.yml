@@ -1,0 +1,63 @@
+backend:
+  name: github
+  repo: BrotherFPV/blog
+  branch: main
+
+locale: zh_CN
+site_url: https://blog.brotherfpv.fly
+media_folder: public/images/uploads
+public_path: /images/uploads
+
+collections:
+  - name: posts
+    label: 文章
+    label_singular: 文章
+    folder: src/content/posts
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: 标题, name: title, widget: string }
+      - { label: 发布时间, name: published, widget: datetime }
+      - { label: 分类, name: category, widget: string, required: false }
+      - label: 标签
+        name: tags
+        widget: list
+        required: false
+      - { label: 草稿, name: draft, widget: boolean, default: false, required: false }
+      - { label: 正文, name: body, widget: markdown }
+
+  - name: moments
+    label: 瞎想/动态
+    label_singular: 动态
+    folder: src/content/moments
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: 发布时间, name: published, widget: datetime }
+      - { label: 图标, name: mood, widget: string, required: false, default: material-symbols:chat-outline-rounded }
+      - label: 标签
+        name: tags
+        widget: list
+        required: false
+      - { label: 内容, name: body, widget: text }
+
+  - name: pages
+    label: 页面
+    label_singular: 页面
+    folder: src/content
+    create: false
+    extension: md
+    format: frontmatter
+    editor:
+      preview: false
+    filter: { field: title, value: "*x" }
+    deleted: true
+    hidden: true
