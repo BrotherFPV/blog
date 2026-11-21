@@ -1,8 +1,8 @@
 ---
 title: Markdown Spoilers
 published: 2026-08-28
-description: Hide inline answers while keeping spoiler content accessible in Shirone Markdown.
-tags: [Demo, Markdown, Accessibility, Shirone]
+description: Hide inline answers while keeping spoiler content accessible in BrotherFPV Markdown.
+tags: [Demo, Markdown, Accessibility, BrotherFPV]
 category: Guides
 lang: en
 draft: false
