@@ -1,8 +1,8 @@
 ---
 title: Markdown Steps
 published: 2026-08-27
-description: Present sequential instructions as a compact, accessible step flow in Shirone.
-tags: [Demo, Markdown, Steps, Shirone]
+description: Present sequential instructions as a compact, accessible step flow in BrotherFPV.
+tags: [Demo, Markdown, Steps, BrotherFPV]
 category: Guides
 lang: en
 draft: false
@@ -22,7 +22,7 @@ Wrap one Markdown ordered list in a `:::steps` container. Each top-level list it
 
    ```powershell
    git clone https://github.com/LyraVoid/Shirone.git
-   Set-Location Shirone
+   Set-Location BrotherFPV
    ```
 
 2. **Install dependencies**
@@ -59,7 +59,7 @@ Wrap one Markdown ordered list in a `:::steps` container. Each top-level list it
 
    ```powershell
    git clone https://github.com/LyraVoid/Shirone.git
-   Set-Location Shirone
+   Set-Location BrotherFPV
    ```
 
 2. **Install dependencies**
