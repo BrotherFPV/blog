@@ -49,3 +49,15 @@ collections:
         widget: list
         required: false
       - { label: 内容, name: body, widget: text }
+
+  - name: about
+    label: 关于页
+    label_singular: 关于页
+    editor:
+      preview: false
+    files:
+      - name: about
+        label: 关于页正文
+        file: src/content/spec/about.md
+        fields:
+          - { label: 正文, name: body, widget: markdown }
