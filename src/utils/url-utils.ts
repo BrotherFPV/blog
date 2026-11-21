@@ -85,8 +85,8 @@ export function getPostUrl(
 }
 
 export function getTagUrl(tag: string): string {
-	if (!tag) return url("/archive/");
-	return url(`/archive/?tag=${encodeURIComponent(tag.trim())}`);
+	if (!tag) return url("/posts/");
+	return url(`/posts/?tag=${encodeURIComponent(tag.trim())}`);
 }
 
 export function getCategoryUrl(category: string | null): string {
@@ -96,8 +96,8 @@ export function getCategoryUrl(category: string | null): string {
 		category.trim().toLowerCase() ===
 			i18n("uncategorized" as I18nKey).toLowerCase()
 	)
-		return url("/archive/?uncategorized=true");
-	return url(`/archive/?category=${encodeURIComponent(category.trim())}`);
+		return url("/posts/?uncategorized=true");
+	return url(`/posts/?category=${encodeURIComponent(category.trim())}`);
 }
 
 export function getSeriesUrl(series: string): string {
