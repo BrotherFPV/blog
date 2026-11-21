@@ -40,6 +40,14 @@ export const friendsData: FriendItem[] = [
 		siteurl: "https://m3.material.io",
 		tags: ["Design"],
 	},
+	{
+		id: 4,
+		title: "ScophireSpace",
+		imgurl: "https://scophire.space/logo/icon.png",
+		desc: "Flint Scophire 的个人博客",
+		siteurl: "https://scophire.space/",
+		tags: ["Friend", "Blog"],
+	},
 ];
 
 // 获取所有友情链接数据（稳定顺序，测试可复现）
