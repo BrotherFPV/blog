@@ -1,8 +1,8 @@
 ---
 title: Markdown Marker Highlights
 published: 2026-08-28
-description: Highlight key phrases with token-driven marker syntax in Shirone Markdown.
-tags: [Demo, Markdown, Typography, Shirone]
+description: Highlight key phrases with token-driven marker syntax in BrotherFPV Markdown.
+tags: [Demo, Markdown, Typography, BrotherFPV]
 category: Guides
 lang: en
 draft: false
