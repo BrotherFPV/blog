@@ -1,9 +1,9 @@
 ---
-title: Shirone Markdown Enhancements
+title: BrotherFPV Markdown Enhancements
 published: 2026-08-19
 pinned: true
-description: Explore Shirone's custom Markdown extensions, expressive components, and authoring syntax.
-tags: [Demo, Markdown, Extensions, Theme, Shirone]
+description: Explore BrotherFPV's custom Markdown extensions, expressive components, and authoring syntax.
+tags: [Demo, Markdown, Extensions, Theme, BrotherFPV]
 series: markdown-syntax-guide
 seriesOrder: 3
 category: Guides
@@ -11,7 +11,7 @@ lang: en
 draft: false
 ---
 
-Shirone provides a collection of theme-exclusive Markdown extensions and custom syntax containers. Built on top of our native unified AST processing pipeline, all extensions render into accessible, semantic HTML during site build time with **zero client JavaScript hydration overhead** and **100% M3E design token alignment**.
+BrotherFPV provides a collection of theme-exclusive Markdown extensions and custom syntax containers. Built on top of our native unified AST processing pipeline, all extensions render into accessible, semantic HTML during site build time with **zero client JavaScript hydration overhead** and **100% M3E design token alignment**.
 
 ## File Trees
 
@@ -22,7 +22,7 @@ File Trees turn multi-level project structures, source hierarchies, and terminal
 Use the `:::file-tree` block directive when writing the file hierarchy directly as a Markdown nested list.
 
 ```markdown
-:::file-tree{title="Shirone source tree"}
+:::file-tree{title="BrotherFPV source tree"}
 - src
   - components/
     - ++ Navigation.svelte # added component
@@ -45,7 +45,7 @@ Use the `:::file-tree` block directive when writing the file hierarchy directly 
 :::
 ```
 
-:::file-tree{title="Shirone source tree"}
+:::file-tree{title="BrotherFPV source tree"}
 - src
   - components/
     - ++ Navigation.svelte # added component
@@ -114,7 +114,7 @@ Interactive Code Trees pair a multi-level file hierarchy navigation pane on the 
 Combine multiple fenced code blocks within a `:::code-tree` block directive. Each code block specifies its path via `title="path/to/file"`.
 
 ````markdown
-:::code-tree{title="Shirone Component Demo" height="380px" entry="src/Button.svelte"}
+:::code-tree{title="BrotherFPV Component Demo" height="380px" entry="src/Button.svelte"}
 ```svelte title="src/Button.svelte"
 <script lang="ts">
   let { label = "Click me" } = $props();
@@ -139,7 +139,7 @@ Combine multiple fenced code blocks within a `:::code-tree` block directive. Eac
 :::
 ````
 
-:::code-tree{title="Shirone Component Demo" height="380px" entry="src/Button.svelte"}
+:::code-tree{title="BrotherFPV Component Demo" height="380px" entry="src/Button.svelte"}
 ```svelte title="src/Button.svelte"
 <script lang="ts">
   let { label = "Click me" } = $props();
