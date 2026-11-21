@@ -105,7 +105,7 @@ export const llmsConfig: LlmsConfig = withUserConfig("llms", {
 		},
 		{
 			title: "Archive",
-			url: "/archive/",
+			url: "/posts/",
 			description: "Chronological index of all published writings.",
 		},
 	],
