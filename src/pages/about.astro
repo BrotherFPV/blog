@@ -1,12 +1,15 @@
 ---
 import { getEntry, render } from "astro:content";
+import Icon from "@iconify/svelte";
 import Card from "@components/atoms/display/Card.svelte";
 import Markdown from "@components/content/Markdown.astro";
 import I18nKey from "@i18n/i18nKey";
 import MainGridLayout from "@layouts/MainGridLayout.astro";
 import { resolveI18nText } from "@utils/i18n-utils";
 import { getMarkdownStylesheetAssets } from "@utils/markdown-assets";
+import { resolveAsset } from "@utils/asset-utils";
 import { aboutConfig } from "@/config/aboutConfig";
+import { profileConfig } from "@/config/profileConfig";
 
 if (!aboutConfig.enable) {
 	return Astro.redirect("/404/");
@@ -25,9 +28,59 @@ const { Content, remarkPluginFrontmatter } = await render(aboutPost);
 const markdownStylesheetAssets = await getMarkdownStylesheetAssets(
 	remarkPluginFrontmatter.markdownSyntaxes,
 );
+
+const avatar = await resolveAsset(profileConfig.avatar);
+const profileFields = [
+	{ icon: "material-symbols:person-outline-rounded", label: "职业", value: "学生" },
+	{ icon: "material-symbols:cake-outline-rounded", label: "生日", value: "10 月 12 日" },
+	{ icon: "material-symbols:location-on-outline-rounded", label: "现居", value: "中国浙江杭州" },
+	{ icon: "material-symbols:schedule-outline-rounded", label: "时区", value: "Asia/Shanghai" },
+];
+const languages = [
+	{ name: "中文", level: "母语" },
+	{ name: "English", level: "努力克服" },
+];
 ---
 <MainGridLayout title={pageTitle} description={pageDescription} page="about">
     {markdownStylesheetAssets.map(({ pack, css }) => <style is:inline slot="head" data-swup-optional={pack} set:html={css}></style>)}
+    <div class="onload-animation mb-6 flex w-full rounded-[var(--shape-corner-l)] overflow-hidden relative min-h-32">
+        <Card color="var(--card-bg)" radius="l" class="z-10 p-6 lg:p-8 relative w-full">
+            <div class="flex items-center gap-5">
+                <img
+                    src={avatar}
+                    alt={profileConfig.name}
+                    class="h-20 w-20 shrink-0 rounded-2xl object-cover lg:h-24 lg:w-24"
+                />
+                <div class="min-w-0">
+                    <h1 class="text-2xl font-bold lg:text-3xl">{profileConfig.name}</h1>
+                    <p class="text-75 mt-2 text-sm lg:text-base">要么压根不做，要么做到极致</p>
+                </div>
+            </div>
+            <div class="mt-6 grid gap-x-8 gap-y-3 text-sm sm:grid-cols-2">
+                {profileFields.map(({ icon, label, value }) => (
+                    <div class="flex items-center gap-2">
+                        <Icon icon={icon} class="text-lg" aria-hidden="true" />
+                        <span class="text-50">{label}：</span>
+                        <span class="font-medium">{value}</span>
+                    </div>
+                ))}
+            </div>
+            <div class="mt-6">
+                <h2 class="flex items-center gap-2 text-base font-bold">
+                    <Icon icon="material-symbols:translate-rounded" class="text-lg" aria-hidden="true" />
+                    语言
+                </h2>
+                <div class="mt-3 grid gap-3 sm:grid-cols-2">
+                    {languages.map(({ name, level }) => (
+                        <div class="rounded-xl bg-[var(--surface-container)] p-4">
+                            <p class="font-bold">{name}</p>
+                            <p class="text-50 mt-1 text-sm">{level}</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </Card>
+    </div>
     <div class="flex w-full rounded-[var(--shape-corner-l)] overflow-hidden relative min-h-32">
         <Card color="var(--card-bg)" radius="l" class="z-10 p-6 lg:p-8 relative w-full">
             <Markdown class="mt-2">
