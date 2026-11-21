@@ -1,12 +1,12 @@
-# About Shirone
+# About BrotherFPV
 
-Welcome to the demo site of **Shirone** (白音) — an expressive, anime-inspired blog theme built on the **Material 3 Expressive (M3E)** design system.
+Welcome to the demo site of **BrotherFPV** (白音) — an expressive, anime-inspired blog theme built on the **Material 3 Expressive (M3E)** design system.
 
-::github{repo="LyraVoid/Shirone"}
+::github{repo="LyraVoid/BrotherFPV"}
 
 ## ✦ Design & Philosophy
 
-Shirone aims to combine the warmth of expressive anime aesthetics with the rigor of modern web engineering:
+BrotherFPV aims to combine the warmth of expressive anime aesthetics with the rigor of modern web engineering:
 
 - **Dynamic Chromatic Spell**: Full dynamic HCT palette generation responding seamlessly to light/dark modes and user preferences with zero layout shifts.
 - **Seamless Shell Navigation**: Persistent application shell driven by Swup for continuous music playback, smooth page transitions, and preserved state.
