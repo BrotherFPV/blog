@@ -8,7 +8,7 @@ lang: en
 draft: false
 ---
 
-Mermaid turns text descriptions in Markdown into diagrams. The examples below use Shirone's content workflow to demonstrate diagram types commonly used in technical articles and project notes.
+Mermaid turns text descriptions in Markdown into diagrams. The examples below use BrotherFPV's content workflow to demonstrate diagram types commonly used in technical articles and project notes.
 
 ## Flowchart
 
@@ -190,7 +190,7 @@ Mind maps expand a central topic into related areas and supporting concepts.
 
 ```mermaid
 mindmap
-  root((Shirone))
+  root((BrotherFPV))
     Content experience
       Markdown
       Search
