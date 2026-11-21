@@ -13,7 +13,7 @@ export const siteConfig: SiteConfig = withUserConfig("site", {
 	site: "https://blog.brotherfpv.fly/",
 	base: "/",
 	title: "BrotherFPV",
-	subtitle: "BotherFPV的个人博客（仍在建设中）",
+	subtitle: "BrotherFPV的个人博客（仍在建设中）",
 	// 电脑端顶栏标题与导航内容区域："left" 左对齐，"center" 居中。
 	topAppBar: {
 		contentAlign: "center",
@@ -70,11 +70,11 @@ export const siteConfig: SiteConfig = withUserConfig("site", {
 		homeText: {
 			// 仅在首页 Banner 中显示，标题与副标题会上下居中排列。
 			enable: true,
-			title: "Shirone",
+			title: "BrotherFPV",
 			subtitle: [
 				"BrotherFPV的个人博客",
 				"仍在建设中",
-				"基于Shirone搭建",
+				"基于 Astro 搭建",
 			],
 			typewriter: {
 				// 副标题逐字显示；关闭后直接显示完整副标题。
