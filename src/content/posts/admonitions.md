@@ -1,8 +1,8 @@
 ---
 title: Markdown Admonitions
 published: 2026-08-27
-description: Present notes, warnings, and optional details with Shirone's M3E Markdown containers.
-tags: [Demo, Markdown, Admonition, Shirone]
+description: Present notes, warnings, and optional details with BrotherFPV's M3E Markdown containers.
+tags: [Demo, Markdown, Admonition, BrotherFPV]
 category: Guides
 lang: en
 draft: false
