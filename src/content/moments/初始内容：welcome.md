@@ -1,9 +1,9 @@
 ---
 published: 2026-08-15T10:00:00+08:00
-pinned: true
 mood: material-symbols:sentiment-excited-outline-rounded
 tags:
   - announcement
+pinned: true
 ---
 
 Welcome to Moments!
