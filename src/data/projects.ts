@@ -20,17 +20,6 @@ export const projectsData: ProjectItem[] = [
 		repository: "https://github.com/LyraVoid/Shirone",
 		year: "2026",
 	},
-	{
-		key: "kernelpatch",
-		title: "KernelPatch",
-		summary:
-			"A kernel patch framework that powers APatch-style root on Android by loading code into the running kernel.",
-		category: "android",
-		phase: "shipped",
-		technologies: ["C", "Linux Kernel", "Android"],
-		icon: "material-symbols:extension-outline-rounded",
-		repository: "https://github.com/lyravoid/KernelPatch",
-	},
 ];
 
 /** 获取所有项目数据列表 */
