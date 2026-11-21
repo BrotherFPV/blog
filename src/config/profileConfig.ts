@@ -11,21 +11,24 @@ export const profileConfig: ProfileConfig = withUserConfig("profile", {
 	bio: "The rain remembers what the sky forgot to say.",
 	links: [
 		{
-			name: "X",
-			icon: "fa7-brands:x-twitter", // Visit https://icones.js.org/ for icon codes
-			// You will need to install the corresponding icon set if it's not already included
-			// `pnpm add @iconify-json/<icon-set-name>`
-			url: "https://x.com",
-		},
-		{
-			name: "Steam",
-			icon: "fa7-brands:steam",
-			url: "https://store.steampowered.com",
+			name: "Bilibili",
+			icon: "fa7-brands:bilibili",
+			url: "https://b23.tv/d85YHtD",
 		},
 		{
 			name: "GitHub",
 			icon: "fa7-brands:github",
-			url: "https://github.com/BrotherFPV/blog",
+			url: "https://github.com/BrotherFPV/",
+		},
+		{
+			name: "CoolApk",
+			icon: "coolapk", // 本地图标：src/icons/coolapk.svg
+			url: "https://www.coolapk.com/u/39911821",
+		},
+		{
+			name: "Email",
+			icon: "fa7-solid:envelope",
+			url: "mailto:adrian@brotherfpv.fly",
 		},
 	],
 });
