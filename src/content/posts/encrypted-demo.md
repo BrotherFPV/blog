@@ -2,7 +2,7 @@
 title: Password Protection and Post Encryption Demo
 published: 2026-08-20
 pinned: true
-description: A demonstration of client-side authenticated decryption, memory session persistence, and M3E design tokens in Shirone.
+description: A demonstration of client-side authenticated decryption, memory session persistence, and M3E design tokens in BrotherFPV.
 tags: [Demo, Security, Encryption, Markdown]
 category: Examples
 lang: en
@@ -20,7 +20,7 @@ Congratulations! You have successfully unlocked this encrypted post. The browser
 
 ## 1. Security Architecture and Core Features
 
-Shirone's post encryption system shares a unified security foundation with protected albums, providing enterprise-grade security for static publishing:
+BrotherFPV's post encryption system shares a unified security foundation with protected albums, providing enterprise-grade security for static publishing:
 
 1. **Zero Plaintext in Static HTML Build**  
    During the Astro SSG build pipeline, post Markdown is compiled to HTML and immediately encrypted with AES-256-GCM before emitting pages. The published static HTML contains **zero plaintext** of the protected body or outline.
@@ -61,11 +61,11 @@ import { decryptProtectedContent, type ProtectedPayload } from "@/utils/password
  */
 async function unlockArticle(payload: ProtectedPayload, password: string): Promise<string> {
     const scope = payload.scope;
-    console.log(`[Shirone] Decrypting scope: ${scope}`);
+    console.log(`[BrotherFPV] Decrypting scope: ${scope}`);
     
     // Execute AES-256-GCM decryption with AAD verification
     const decryptedHtml = await decryptProtectedContent(payload, password, scope);
-    console.log("[Shirone] Decryption successful, length:", decryptedHtml.length);
+    console.log("[BrotherFPV] Decryption successful, length:", decryptedHtml.length);
     return decryptedHtml;
 }
 ```
@@ -156,4 +156,4 @@ Static encryption has no centralized server database. If a password is forgotten
 
 ## 4. Summary
 
-This demo verifies the entire encryption lifecycle in Shirone: zero plaintext in static output, robust cryptographic verification, session persistence across navigation and page reloads, and dynamic runtime rehydration.
+This demo verifies the entire encryption lifecycle in BrotherFPV: zero plaintext in static output, robust cryptographic verification, session persistence across navigation and page reloads, and dynamic runtime rehydration.
