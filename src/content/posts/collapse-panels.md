@@ -2,7 +2,7 @@
 title: Markdown Collapse Panels
 published: 2026-08-28
 description: Group optional Markdown content into compact, accessible M3E disclosure panels.
-tags: [Demo, Markdown, Collapse, Shirone]
+tags: [Demo, Markdown, Collapse, BrotherFPV]
 category: Guides
 lang: en
 draft: false
