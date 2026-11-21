@@ -2,12 +2,12 @@
 title: "Markdown File Includes"
 published: 2026-08-28
 description: "Build-time Markdown file and slice includes."
-tags: [Markdown, Shirone]
+tags: [Markdown, BrotherFPV]
 category: Guides
 draft: false
 ---
 
-Shirone can include a local Markdown file or a safe slice of one.
+BrotherFPV can include a local Markdown file or a safe slice of one.
 
 <!-- @include: src/content/snippets/include-example.md#public-api -->
 
