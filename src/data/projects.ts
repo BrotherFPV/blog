@@ -7,7 +7,7 @@ import type { ProjectItem } from "@/types/projectsConfig";
 export const projectsData: ProjectItem[] = [
 	{
 		key: "shirone",
-		title: "Shirone",
+		title: "BrotherFPV",
 		summary:
 			"An Astro blog theme shaped around an M3E component system, expressive content, and resilient client navigation.",
 		category: "theme",
@@ -15,20 +15,10 @@ export const projectsData: ProjectItem[] = [
 		technologies: ["Astro", "Svelte", "TypeScript", "Tailwind CSS"],
 		icon: "material-symbols:deployed-code-outline-rounded",
 		cover: "/assets/projects/shirone.webp",
-		coverAlt: "Shirone theme homepage preview",
+		coverAlt: "BrotherFPV theme homepage preview",
 		featured: true,
 		repository: "https://github.com/LyraVoid/Shirone",
 		year: "2026",
-	},
-	{
-		key: "folkpatch",
-		title: "FolkPatch",
-		summary: "A kernel-level root solution for Android, built on APatch.",
-		category: "android",
-		phase: "building",
-		technologies: ["Kotlin", "APatch", "Android"],
-		icon: "material-symbols:terminal-rounded",
-		repository: "https://github.com/LyraVoid/FolkPatch",
 	},
 	{
 		key: "kernelpatch",
