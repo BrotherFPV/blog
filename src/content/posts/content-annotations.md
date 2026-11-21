@@ -1,8 +1,8 @@
 ---
 title: Content Annotations
 published: 2026-08-27
-description: Add compact, accessible supporting notes to Shirone articles without interrupting the reading flow.
-tags: [Demo, Markdown, Annotation, Shirone]
+description: Add compact, accessible supporting notes to BrotherFPV articles without interrupting the reading flow.
+tags: [Demo, Markdown, Annotation, BrotherFPV]
 category: Guides
 lang: en
 draft: false
