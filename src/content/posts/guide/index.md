@@ -1,21 +1,21 @@
 ---
-title: "Shirone Authoring & Usage Guide"
+title: "BrotherFPV Authoring & Usage Guide"
 published: 2026-08-26
 updated: 2026-08-26
 pinned: true
-description: "A comprehensive guide to post authoring, frontmatter schema, Markdown extensions, encryption, and media in Shirone."
+description: "A comprehensive guide to post authoring, frontmatter schema, Markdown extensions, encryption, and media in BrotherFPV."
 image: "./cover.jpeg"
-tags: ["Shirone", "Guide", "Markdown", "M3E", "Blogging"]
+tags: ["BrotherFPV", "Guide", "Markdown", "M3E", "Blogging"]
 category: Guides
 draft: false
 ---
 
-Welcome to **Shirone** (白音) — an expressive, anime-inspired blog theme crafted around **Astro 7**, **Svelte 5**, and the **Material 3 Expressive (M3E)** design system.
+Welcome to **BrotherFPV** (白音) — an expressive, anime-inspired blog theme crafted around **Astro 7**, **Svelte 5**, and the **Material 3 Expressive (M3E)** design system.
 
 This guide walks you through post creation, frontmatter specifications, directory structure, and the full suite of built-in Markdown and MDX extensions.
 
 :::tip
-Shirone renders content server-side first (SSR-first). When navigating within the site, Swup seamlessly swaps the main container while preserving the outer application shell and continuous music playback.
+BrotherFPV renders content server-side first (SSR-first). When navigating within the site, Swup seamlessly swaps the main container while preserving the outer application shell and continuous music playback.
 :::
 
 ---
@@ -50,7 +50,7 @@ updated: 2026-08-27
 publishedAt: 2026-08-26T10:00:00+08:00
 updatedAt: 2026-08-27T09:30:00+08:00
 pinned: true
-description: "A deep dive into dynamic HCT color science and fluid transitions in Shirone."
+description: "A deep dive into dynamic HCT color science and fluid transitions in BrotherFPV."
 image: "./cover.webp"
 tags: [M3E, Design, Frontend]
 category: Guides
@@ -81,7 +81,7 @@ comment: true
 
 ## 3. Post Encryption
 
-Shirone provides client-side post encryption. This is a static password gate, not server-side access control: the encrypted payload and asset URLs remain publicly downloadable, so do not use it for genuinely confidential files or regulated secrets. For private journals or restricted articles, specify a password in frontmatter:
+BrotherFPV provides client-side post encryption. This is a static password gate, not server-side access control: the encrypted payload and asset URLs remain publicly downloadable, so do not use it for genuinely confidential files or regulated secrets. For private journals or restricted articles, specify a password in frontmatter:
 
 ```yaml
 ---
@@ -103,7 +103,7 @@ hideHomeContent: true
 
 ## 4. Organizing Post Files
 
-Shirone supports both folder-based co-location and single-file layouts:
+BrotherFPV supports both folder-based co-location and single-file layouts:
 
 ### Folder Structure (Recommended for Local Assets)
 
@@ -129,7 +129,7 @@ src/content/posts/
 
 ## 5. Rich Markdown & MDX Extensions
 
-Shirone includes modern Markdown extensions out of the box:
+BrotherFPV includes modern Markdown extensions out of the box:
 
 ### 5.1 Admonitions
 
@@ -150,10 +150,10 @@ Use warning containers to signal potential pitfalls or breaking changes.
 Embed live, beautifully styled GitHub repository cards using the directive syntax:
 
 ```markdown
-::github{repo="LyraVoid/Shirone"}
+::github{repo="LyraVoid/BrotherFPV"}
 ```
 
-::github{repo="LyraVoid/Shirone"}
+::github{repo="LyraVoid/BrotherFPV"}
 
 ### 5.3 Expressive Code Blocks
 
@@ -186,7 +186,7 @@ Create flowcharts, sequence diagrams, and architecture maps using plain text:
 sequenceDiagram
     autonumber
     actor Visitor as Visitor
-    participant Page as Shirone Page
+    participant Page as BrotherFPV Page
     participant Swup as Swup Container
     participant Audio as Persistent Shell
 
