@@ -15,7 +15,7 @@ export const devicesData: DeviceItem[] = [
 		description: "除了烫手都是宝，下一代钉子户",
 		icon: "material-symbols:phone-iphone",
 		featured: true,
-		year: "2025",
+		year: "2024",
 	},
 	{
 		id: "mechrevo-jiaolong-16-pro-2025",
@@ -62,6 +62,6 @@ export const devicesData: DeviceItem[] = [
 		specs: "蓝",
 		description: "一代神机",
 		icon: "material-symbols:headphones-rounded",
-		year: "2025",
+		year: "2026",
 	},
 ];
