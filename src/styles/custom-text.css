@@ -1,0 +1,37 @@
+/* ============================================================
+   BrotherFPV 文字样式模板（custom-text.css）
+   每行一个文字样式，花括号里的注释就是对应元素名称。
+   用法：把注释删掉，换成你想要的 CSS，例如
+     font-size: 1.1rem; color: #6070ff; font-weight: 700;
+   改完保存推送后，Cloudflare 会自动重新构建上线。
+   ============================================================ */
+
+body { /* 全站正文（全局默认文字） */ }
+.custom-md h1 { /* 文章一级标题 H1 */ }
+.custom-md h2 { /* 文章二级标题 H2 */ }
+.custom-md h3 { /* 文章三级标题 H3 */ }
+.custom-md h4 { /* 文章四级标题 H4 */ }
+.custom-md h5 { /* 文章五级标题 H5 */ }
+.custom-md h6 { /* 文章六级标题 H6 */ }
+.custom-md p { /* 文章正文段落 */ }
+.custom-md a { /* 文章内链接 */ }
+.custom-md strong { /* 加粗文字 */ }
+.custom-md em { /* 斜体文字 */ }
+.custom-md del { /* 删除线文字 */ }
+.custom-md mark { /* 高亮标记文字 */ }
+.custom-md ul li { /* 无序列表项 */ }
+.custom-md ol li { /* 有序列表项 */ }
+.custom-md blockquote { /* 引用块文字 */ }
+.custom-md blockquote p { /* 引用块内段落文字 */ }
+.custom-md code { /* 行内代码文字 */ }
+.custom-md pre { /* 代码块文字 */ }
+.custom-md table th { /* 表格表头文字 */ }
+.custom-md table td { /* 表格单元格文字 */ }
+.custom-md figcaption { /* 图片/表格说明文字 */ }
+.custom-md kbd { /* 键盘按键文字 */ }
+.link { /* 导航栏/侧栏等可点击链接文字 */ }
+.text-90 { /* 最深文字层级（92% 不透明度） */ }
+.text-75 { /* 次深文字层级（78% 不透明度） */ }
+.text-50 { /* 中等文字层级（侧栏等次要文字） */ }
+.text-30 { /* 较浅文字层级（辅助说明） */ }
+.text-25 { /* 最浅文字层级（占位/版权类小字） */ }
