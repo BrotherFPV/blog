@@ -1,51 +1,82 @@
 /**
  * 游戏展示页数据源（纯内容）。
  * 页面展示与筛选规则由 src/config/gamesConfig.ts 控制。
- *
- * 封面支持三种写法：
- * - src/assets 相对路径（如本文件所用，走 Astro 图片管线自动优化为 webp/avif）；
- * - /public 绝对路径（如 "/assets/games/xxx.webp"，原样输出）；
- * - 远程 URL（https://…）。
- *
- * 注：以下为演示条目——评分 / 时长 / 状态是占位数值，请按自己的实际情况调整；
- * 封面取自各游戏官方商店页或官网主视觉。
  */
 import type { GameItem } from "@/types/gamesConfig";
 
 export const gamesData: GameItem[] = [
 	{
-		id: "nte-neverness-to-everness",
-		name: "NTE: Neverness to Everness",
-		developer: "Hotta Studio",
-		category: "open-world",
+		id: "pubg-mobile",
+		name: "和平精英",
+		developer: "腾讯光子",
+		category: "fps",
 		status: "playing",
-		cover: "assets/games/yihuan-hero.jpg",
-		icon: "material-symbols:explore-outline-rounded",
-		rating: 4.5,
-		hours: 86,
-		platform: "PC",
-		year: "2026",
-		tags: ["Open World", "Urban", "Supernatural"],
-		description:
-			"A supernatural urban open-world RPG. As an anomaly-user who senses the “waves” of people and anomalies, you join E.T.D Squad Six and investigate the city's paranormal events.",
-		link: "https://yh.wanmei.com/main.html",
-		featured: true,
+		icon: "material-symbols:target-rounded",
+		rating: 5,
+		hours: 999,
+		platform: "Mobile",
+		year: "2019",
+		tags: ["手游", "大逃杀", "主力"],
+		description: "绝大多数时间都在打的游戏。",
 	},
 	{
-		id: "minecraft",
-		name: "Minecraft",
-		developer: "Mojang Studios",
-		category: "sandbox",
+		id: "pubg",
+		name: "PUBG",
+		developer: "KRAFTON",
+		category: "fps",
 		status: "playing",
-		cover: "assets/games/minecraft-hero.jpg",
-		icon: "material-symbols:widgets-rounded",
-		rating: 5,
-		hours: 420,
+		icon: "material-symbols:target-rounded",
+		rating: 4.5,
+		hours: 500,
 		platform: "PC",
-		year: "2011",
-		tags: ["Sandbox", "Survival", "Building"],
-		description:
-			"A blocky sandbox where you mine, craft and build across procedurally generated worlds. Survive the night, or just keep building — alone or with friends.",
-		link: "https://www.minecraft.net/",
+		year: "2017",
+		tags: ["PC", "大逃杀"],
+		description: "端游吃鸡，偶尔怀旧一把。",
+		link: "https://www.pubg.com/",
+	},
+	{
+		id: "battlefield-6",
+		name: "战地 6",
+		developer: "Battlefield Studios",
+		category: "fps",
+		status: "playing",
+		icon: "material-symbols:target-rounded",
+		rating: 4.5,
+		hours: 120,
+		platform: "PC",
+		year: "2025",
+		tags: ["PC", "大战场", "载具"],
+		description: "大战场爱好者的狂欢。",
+		link: "https://www.ea.com/games/battlefield/battlefield-6",
+	},
+	{
+		id: "war-thunder",
+		name: "战争雷霆",
+		developer: "Gaijin",
+		category: "fps",
+		status: "playing",
+		icon: "material-symbols:target-rounded",
+		rating: 4,
+		hours: 200,
+		platform: "PC",
+		year: "2013",
+		tags: ["PC", "载具", "军事"],
+		description: "飞机坦克一锅端。",
+		link: "https://warthunder.com/",
+	},
+	{
+		id: "cs2",
+		name: "CS2",
+		developer: "Valve",
+		category: "fps",
+		status: "playing",
+		icon: "material-symbols:target-rounded",
+		rating: 4.5,
+		hours: 300,
+		platform: "PC",
+		year: "2023",
+		tags: ["PC", "竞技"],
+		description: "休闲竞技两相宜。",
+		link: "https://www.counter-strike.net/cs2",
 	},
 ];
