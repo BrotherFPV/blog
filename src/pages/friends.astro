@@ -3,6 +3,7 @@ import FriendSection from "@components/organisms/FriendSection.svelte";
 import I18nKey from "@i18n/i18nKey";
 import MainGridLayout from "@layouts/MainGridLayout.astro";
 import { resolveI18nText } from "@utils/i18n-utils";
+import Icon from "@iconify/svelte";
 import { friendsConfig } from "@/config/friendsConfig";
 import { getFriendsList } from "../data/friends";
 
@@ -18,6 +19,36 @@ const pageDescription = resolveI18nText(
 ---
 
 <MainGridLayout title={pageTitle} description={pageDescription} page="friends">
+	<section
+		class="onload-animation mb-6 rounded-[var(--radius-large)] bg-[var(--card-bg)] p-6"
+		aria-label="本站信息"
+	>
+		<h2 class="flex items-center gap-2 text-xl font-bold">
+			<Icon icon="material-symbols:info-outline-rounded" class="text-lg" aria-hidden="true" />
+			本站信息
+		</h2>
+		<p class="text-50 mt-1 text-sm">如何将本站添加到贵站</p>
+		<div class="mt-4 grid gap-2 text-sm sm:grid-cols-2">
+			<div><span class="text-50">站点名称：</span>BrotherFPV</div>
+			<div>
+				<span class="text-50">站点地址：</span>
+				<a class="link" href="https://blog.brotherfpv.fly/" target="_blank">https://blog.brotherfpv.fly/</a>
+			</div>
+			<div><span class="text-50">站点描述：</span>FPV 两兄弟的记录空间</div>
+			<div>
+				<span class="text-50">站长邮箱：</span>
+				<a class="link" href="mailto:adrian@brotherfpv.fly">adrian@brotherfpv.fly</a>
+			</div>
+		</div>
+		<div class="mt-5">
+			<p class="text-50 mb-2 text-sm font-medium">友链信息（直接复制）</p>
+			<pre class="overflow-x-auto rounded-xl bg-[var(--surface-container)] p-4 text-xs leading-relaxed"><code>title: BrotherFPV
+url: https://blog.brotherfpv.fly/
+imgurl: https://blog.brotherfpv.fly/logo/icon.webp
+desc: FPV 两兄弟的记录空间
+email: adrian@brotherfpv.fly</code></pre>
+		</div>
+	</section>
 	<FriendSection
 		friends={getFriendsList()}
 		title={pageTitle}

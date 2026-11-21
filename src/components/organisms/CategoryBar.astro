@@ -55,15 +55,6 @@ const softCategory = !isHome && !isArchive && postCategory ? postCategory : "";
 			>
 				<Icon icon="material-symbols:home" class="text-lg" aria-hidden="true" />
 			</Chip>
-			<Chip
-				variant="tonal"
-				href={archiveUrl}
-				selected={isArchive}
-				class="shrink-0"
-			>
-				{i18n(I18nKey.archive)}
-			</Chip>
-
 			<!-- 分类区：横向滚动 -->
 			<div class="category-bar-list flex gap-2 overflow-x-auto hide-scrollbar flex-1 min-w-0">
 				{categories.map((cat) => (

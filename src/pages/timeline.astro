@@ -6,6 +6,7 @@ import MainGridLayout from "@layouts/MainGridLayout.astro";
 import { resolveI18nText } from "@utils/i18n-utils";
 import { timelineConfig } from "@/config/timelineConfig";
 import { resolveTimelineData } from "@/utils/feature-data";
+import { resolveAsset } from "@utils/asset-utils";
 
 if (!timelineConfig.enable) {
 	return Astro.redirect("/404/");
@@ -17,7 +18,15 @@ const pageDescription = resolveI18nText(
 	I18nKey.timelineBanner,
 );
 
-const items = resolveTimelineData(timelineConfig);
+const rawItems = resolveTimelineData(timelineConfig);
+const items = await Promise.all(
+	rawItems.map(async (item) => ({
+		...item,
+		images: item.images
+			? await Promise.all(item.images.map((src) => resolveAsset(src)))
+			: undefined,
+	})),
+);
 ---
 
 <MainGridLayout

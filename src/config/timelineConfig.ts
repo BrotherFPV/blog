@@ -18,31 +18,28 @@ export const timelineConfig: TimelineConfig = withUserConfig("timeline", {
 	description: "$t:timelineBanner",
 	categories: [
 		{
-			key: "milestone",
-			label: "Milestones",
-			icon: "material-symbols:flag-rounded",
+			key: "journey",
+			label: "启程",
+			icon: "material-symbols:flight-takeoff-rounded",
 		},
 		{
-			key: "project",
-			label: "Projects",
-			icon: "material-symbols:code-rounded",
+			key: "competition",
+			label: "竞赛",
+			icon: "material-symbols:trophy-outline-rounded",
 		},
 		{
-			key: "career",
-			label: "Career",
-			icon: "material-symbols:work-rounded",
+			key: "honor",
+			label: "荣誉",
+			icon: "material-symbols:military-tech-rounded",
 		},
 		{
-			key: "education",
-			label: "Education",
-			icon: "material-symbols:school-rounded",
-		},
-		{
-			key: "life",
-			label: "Life",
-			icon: "material-symbols:favorite-rounded",
+			key: "pause",
+			label: "休整",
+			icon: "material-symbols:pause-circle-outline-rounded",
 		},
 	],
+	/** 从前往后（时间正序） */
+	order: "asc",
 	order: "desc",
 	// disabledTitles: [],
 });

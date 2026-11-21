@@ -44,6 +44,10 @@ export interface TimelineItem {
 	links?: TimelineLink[];
 	/** 节点自定义图标（Iconify 名），未指定时使用分类图标或默认节点图标。 */
 	icon?: string;
+	/** 节点配图（相对 src 的本地路径或远程 URL），渲染为可点击灯箱画廊。 */
+	images?: string[];
+	/** 节点内嵌媒体：B站视频（src 填 bvid）或直链视频（src 填完整 URL）。 */
+	videos?: { type: "bilibili" | "mp4"; src: string }[];
 	/** 是否为重点里程碑节点（带突出徽标与重点渲染）。 */
 	featured?: boolean;
 }

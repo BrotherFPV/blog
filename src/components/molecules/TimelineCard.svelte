@@ -103,6 +103,42 @@ const markerIcon = $derived(
 			</ul>
 		{/if}
 
+		<!-- 节点配图（灯箱画廊） -->
+		{#if item.images && item.images.length > 0}
+			<div class="timeline-card__gallery">
+				{#each item.images as src (src)}
+					<a
+						href={src}
+						data-fancybox={`timeline-${item.title}`}
+						class="timeline-card__thumb"
+						aria-label={item.title}
+					>
+						<img src={src} alt={item.title} loading="lazy" />
+					</a>
+				{/each}
+			</div>
+		{/if}
+
+		<!-- 内嵌媒体：B站外链播放器 / 直链视频 -->
+		{#if item.videos && item.videos.length > 0}
+			<div class="timeline-card__videos">
+				{#each item.videos as v (v.src)}
+					{#if v.type === "bilibili"}
+						<iframe
+							src={`https://player.bilibili.com/player.html?bvid=${v.src}&autoplay=0&danmaku=0&high_quality=1`}
+							loading="lazy"
+							allowfullscreen
+							scrolling="no"
+							frameborder="0"
+							title={item.title}
+						></iframe>
+					{:else}
+						<video src={v.src} controls preload="none" playsinline></video>
+					{/if}
+				{/each}
+			</div>
+		{/if}
+
 		<!-- 技术栈 / 关联标签 -->
 		{#if item.tags && item.tags.length > 0}
 			<ul class="timeline-card__tags" aria-label={i18n(I18nKey.tags)}>
@@ -415,4 +451,41 @@ const markerIcon = $derived(
 		> :global(svg)
 			width: 1rem
 			height: 1rem
+
+	/* 节点配图画廊 */
+	&__gallery
+		display: grid
+		grid-template-columns: repeat(3, 1fr)
+		gap: 0.5rem
+		margin-top: 0.75rem
+
+	&__thumb
+		display: block
+		overflow: hidden
+		border-radius: var(--shape-corner-m, 12px)
+		background: var(--surface-container)
+
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			aspect-ratio: 4 / 3
+			transition: transform var(--m3e-duration-medium) var(--m3e-easing-standard)
+
+		&:hover img
+			transform: scale(1.04)
+
+	/* 内嵌视频（B站外链播放器 / 直链） */
+	&__videos
+		display: grid
+		gap: 0.5rem
+		margin-top: 0.75rem
+
+		iframe, video
+			display: block
+			width: 100%
+			aspect-ratio: 16 / 9
+			border: none
+			border-radius: var(--shape-corner-m, 12px)
+			background: var(--surface-container)
 </style>

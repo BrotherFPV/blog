@@ -1,26 +1,18 @@
-# About BrotherFPV
+# 关于 BrotherFPV
 
-Welcome to the demo site of **BrotherFPV** (白音) — an expressive, anime-inspired blog theme built on the **Material 3 Expressive (M3E)** design system.
+你好，欢迎来到 **BrotherFPV** 的个人博客——FPV 两兄弟的记录空间。
 
-::github{repo="LyraVoid/BrotherFPV"}
+本站基于开源主题 **Shirone**（Astro + Svelte，Material 3 Expressive 设计系统）搭建，记录 FPV 穿越机飞行、比赛经历与日常折腾。
 
-## ✦ Design & Philosophy
+## ✦ 关于本站
 
-BrotherFPV aims to combine the warmth of expressive anime aesthetics with the rigor of modern web engineering:
+- **主题**：[Shirone](https://github.com/yCENzh/shirones) —— 一个围绕 M3E 组件系统打造的表达力极强的 Astro 博客主题
+- **部署**：Cloudflare Workers（Git 自动构建）
+- **联系**：adrian@brotherfpv.fly
 
-- **Dynamic Chromatic Spell**: Full dynamic HCT palette generation responding seamlessly to light/dark modes and user preferences with zero layout shifts.
-- **Seamless Shell Navigation**: Persistent application shell driven by Swup for continuous music playback, smooth page transitions, and preserved state.
-- **Rich Story Grimoire**: Markdown and MDX authoring with KaTeX math, Mermaid diagrams, interactive admonitions, expressive code blocks, and adaptive image galleries.
-- **Zero Extra Burden**: Optional integrations (comments, analytics, music widgets) load dynamically on demand — zero DOM footprint and zero bundle overhead when disabled.
+## ✦ 关于我
 
-## ✦ Tech Stack
+- FPV 穿越机爱好者，曾入选国家队，出战 FAI WDRC 世界赛
+- 闲时折腾 WearOS 小工具、写点代码
 
-- **Framework**: [Astro 7](https://astro.build/) & [Svelte 5](https://svelte.dev/) (Runes-driven islands)
-- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/) & [Stylus](https://stylus-lang.com/)
-- **Design Standard**: [Material 3 Expressive](https://m3.material.io/)
-- **Typography**: Outfit & Yozai (悠哉圆体) with automated build-time subsetting
-- **Search Engine**: [Pagefind](https://pagefind.app/) offline full-text search
-
-## ✦ Credits
-
-- **Font**: [Yozai Font (悠哉字体)](https://github.com/lxgw/yozai-font) by [lxgw](https://github.com/lxgw)
+::github{repo="BrotherFPV/blog"}

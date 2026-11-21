@@ -73,6 +73,7 @@ export const siteConfig: SiteConfig = withUserConfig("site", {
 			title: "BrotherFPV",
 			subtitle: [
 				"BrotherFPV的个人博客",
+				"FPV两兄弟的记录空间",
 				"仍在建设中",
 				"基于 Astro 搭建",
 			],
